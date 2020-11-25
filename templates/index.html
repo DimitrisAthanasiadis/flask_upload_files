@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Upload Files</title>
+    <meta charset="utf-8">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="../static/js/scripts.js"></script>
+
+    <style>hr, h3 {padding-bottom: 20px;}canvas {background-color: #fffff;}</style>
+    <style>
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="header">
+        <h3 class="text-muted">Flask upload zip file and unzip</h3>
+      </div>
+
+      <form method=post enctype=multipart/form-data id='fileform'>
+        <input type=file name=file multiple="true" id="files" onchange='printFileNames(this)'>
+        <div>
+          <p>Uploaded filenames</p>
+          <p id="totalSize">Total size - 0MB</p>
+          <ul id="filenames">
+          </ul>
+        </div>
+        <input type=submit value=Upload id="submit">
+      </form>
+    </div>
+
+    <script>
+    </script>
+  </body>
+</html>
