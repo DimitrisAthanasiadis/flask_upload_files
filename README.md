@@ -1,1 +1,1 @@
-# flask_upload_files
+Simple app for the demonstration of uploading multiple files to flask, checking for limit and storing them locally. There are comments where the files can be zipped and the stored locally. Flask is used as the backend framework.
